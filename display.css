@@ -1,0 +1,121 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    background-image:url(imadges/888888-1.webp);
+}
+.parant
+{
+background-color: tomato;
+display: flex;   /* الديف جنب بعض*/
+flex-direction: row-reverse;/* الصفحة بالعربي*/
+text-align: center;/*الكلام نصف السطر*/
+flex-direction: column;/*تحت بعض*/
+flex-flow: row wrap;
+}
+.chile
+{
+    width: 20%;
+    height: 100px;
+}
+
+.chile1
+{
+    background-color: rgb(80, 255, 211);
+}
+.chile2
+{
+    background-color: crimson;
+}
+.chile3
+{
+    background-color: blue;
+}
+.chile4
+{
+    background-color: darkorange;
+}
+
+
+.memper
+{
+    background-color: brown;
+    width: 30%;
+    text-align: center;
+    border: solid 5px gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    overflow: hidden;
+}
+.capthion
+{
+    background-color: rgba(138, 43, 226,0.512);
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ,transform 1s;
+    
+}
+.memper img
+{
+    width: 100%;
+    transition: transform 1s 1s;
+}
+.memper h1
+{
+    background-color: #09c;
+    padding: 10px;
+    position: relative;
+    left: 120%;
+    transition: left 1s 2s;
+    color: #fff;
+}
+.memper:hover .capthion
+{
+opacity:1;
+transform: rotate(360deg);
+}
+.memper:hover img
+{
+    transform: scale(1.2,1.2);
+}
+
+.memper p
+{
+    padding: 20px;
+    font-size: 20px;
+    position: relative;
+    left: 100%;
+    transition: left 1s 2.5s;
+
+}
+.memper:hover h1 , .memper:hover p
+{
+    left: 0;
+}
+
+.mohamed img
+{
+    width: 200px;
+    height: 200px;
+    transition: transform 1s;
+    border: solid 5px green;
+}
+
+img:hover 
+{
+    transform:rotate(360deg) ;
+}
+
+
+
+
+
+
